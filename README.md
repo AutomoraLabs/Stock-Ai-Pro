@@ -23,6 +23,15 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
    Adobe Stock Keywords:
    SEO Optimized File Name:
    ```
+   **Parse Output should be like this**
+   ```text
+   Category: Culture and Religion
+   Aspect Ratio: 9:16
+   AI Image Generation Prompt: Create a premium symbolic Navratri festival illustration featuring exactly nine beautifully crafted traditional brass diyas arranged in an elegant symmetrical arc, representing the nine nights of Navratri.
+   Adobe Stock Title: Nine Diyas Happy Navratri Festival Greeting Illustration
+   Adobe Stock Keywords: navratri, diya, nine diyas, hindu festival, indian festival, happy navratri, oil lamp, brass lamp, religious, devotional, indian culture, spirituality
+   SEO Optimized File Name: nine-diyas-happy-navratri-greeting
+   ```
 
    **Use this Prompt to achieve the exact format as above (Just put this into your current Model)**
 
@@ -36,6 +45,7 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
    Adobe Stock Keywords: [Exactly 40-45 highly relevant, comma-separated keywords, ordered by importance]
    SEO Optimized File Name: [a-descriptive-kebab-case-file-name-without-extension]
    ```
+
 
 2. **Auto-Add:** The app instantly parses and adds the asset to your Pending list.
 3. **1-Click Generation 🤖:** Click the Robot icon to copy the prompt to your clipboard and launch an auto-listener.
