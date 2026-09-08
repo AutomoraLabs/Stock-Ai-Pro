@@ -45,7 +45,7 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
 
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/Stock-Ai-Pro.git](https://github.com/yourusername/Stock-Ai-Pro.git)
+git clone [https://github.com/AutomoraLabs/Stock-Ai-Pro.git](https://github.com/yourusername/Stock-Ai-Pro.git)
 cd Stock-Ai-Pro
 
 # Create and activate virtual environment
@@ -57,3 +57,89 @@ pip install PyQt5 qtawesome
 
 # Run the app
 python app.py
+
+
+## Build a Windows executable
+
+
+
+For a simple local build:
+
+
+
+```bash
+
+pip install pyinstaller
+
+python -m PyInstaller --noconsole --windowed --name "StockAI Pro" --icon=app_icon.ico app.py
+
+```
+
+
+
+If you do not have `app_icon.ico`, remove the `--icon app_icon.ico` part.
+
+
+
+The generated executable will be placed in:
+
+
+
+```text
+
+dist/
+
+```
+
+
+
+You can then package the generated `.exe` with Inno Setup.
+
+
+
+## Important
+
+
+
+Stock Ai Pro is **not affiliated with Adobe Inc. or Adobe Stock**. Adobe Stock is a trademark of Adobe Inc.
+
+
+
+## Support
+
+
+
+Stock Ai Pro is free to use.
+
+
+
+If you find it useful and would like to support continued development:
+
+
+
+☕ https://www.buymeacoffee.com/rishichaurasiya
+
+
+
+## License
+
+
+
+Stock Ai Pro is free to use, modify, fork, contribute to, and use commercially.
+
+
+
+The software itself may not be sold, resold, or redistributed as a paid product without prior written permission from the copyright holder.
+
+
+
+See [LICENSE](LICENSE) for the full terms.
+
+
+
+## Author
+
+
+
+**Rishi Chaurasiya** 
+
