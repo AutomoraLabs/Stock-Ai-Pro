@@ -24,24 +24,25 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
 
    **Parse Output should be like this**
 
-   Category: Culture and Religion  
-   Aspect Ratio: 9:16  
-   AI Image Generation Prompt: Create a premium symbolic Navratri festival illustration featuring exactly nine beautifully crafted traditional brass diyas arranged in an elegant symmetrical arc, representing the nine nights of Navratri.  
-   Adobe Stock Title: Nine Diyas Happy Navratri Festival Greeting Illustration  
-   Adobe Stock Keywords: navratri, diya, nine diyas, hindu festival, indian festival, happy navratri, oil lamp, brass lamp, religious, devotional, indian culture, spirituality  
-   SEO Optimized File Name: nine-diyas-happy-navratri-greeting  
+   **Category:** Culture and Religion  
+   **Aspect Ratio:** 9:16  
+   **AI Image Generation Prompt:** Create a premium symbolic Navratri festival illustration featuring exactly nine beautifully crafted traditional brass diyas arranged in an elegant symmetrical arc, representing the nine nights of Navratri.  
+   **Adobe Stock Title:** Nine Diyas Happy Navratri Festival Greeting Illustration  
+   **Adobe Stock Keywords:** navratri, diya, nine diyas, hindu festival, indian festival, happy navratri, oil lamp, brass lamp, religious, devotional, indian culture, spirituality  
+   **SEO Optimized File Name:** nine-diyas-happy-navratri-greeting  
 
-   **Use this Prompt to achieve the exact format as above (Just put this into your current Model)**
+   **Use this Prompt to achieve the exact format as above **(Just put this into your current AI model where you generate the image prompt.)**
+**
 
    ```text
    From now EACH concept, you MUST output the data STRICTLY in the exact format below. Do not add any extra markdown formatting, bullet points, or numbers before the labels. The labels must be exact.
 
-   Category: [Choose ONE valid Adobe Stock category: Animals / Buildings and Architecture / Business / Drinks / The Environment / States of Mind / Food / Graphic Resources / Hobbies and Leisure / Industry / Landscapes / Lifestyle / People / Plants and Flowers / Culture and Religion / Science / Social Issues / Sports / Technology / Transport / Travel]
-   Aspect Ratio: [e.g., 16:9 or 9:16 or 1:1]
-   AI Image Generation Prompt: 
-   Adobe Stock Title: [A descriptive, SEO-friendly title between 5-15 words]
-   Adobe Stock Keywords: [Exactly 40-45 highly relevant, comma-separated keywords, ordered by importance]
-   SEO Optimized File Name: [a-descriptive-kebab-case-file-name-without-extension]
+   **Category:** [Choose ONE valid Adobe Stock category: Animals / Buildings and Architecture / Business / Drinks / The Environment / States of Mind / Food / Graphic Resources / Hobbies and Leisure / Industry / Landscapes / Lifestyle / People / Plants and Flowers / Culture and Religion / Science / Social Issues / Sports / Technology / Transport / Travel]
+   **Aspect Ratio:** [e.g., 16:9 or 9:16 or 1:1]
+   **AI Image Generation Prompt:** 
+   **Adobe Stock Title:** [A descriptive, SEO-friendly title between 5-15 words]
+   **Adobe Stock Keywords:** [Exactly 40-45 highly relevant, comma-separated keywords, ordered by importance]
+   **SEO Optimized File Name:** [a-descriptive-kebab-case-file-name-without-extension]
    ```
 
 3. **Auto-Add:** The app instantly parses and adds the asset to your Pending list.
