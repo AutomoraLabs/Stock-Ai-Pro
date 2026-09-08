@@ -15,12 +15,12 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
 
 1. **Paste Metadata:** Paste your raw text format. The app requires this exact structure to auto-parse correctly:
 
-   **Category:** 
-   **Aspect Ratio:**  
-   **AI Image Generation Prompt:**  
-   **Adobe Stock Title:**  
-   **Adobe Stock Keywords:**  
-   **SEO Optimized File Name:**  
+   *Category:* 
+   *Aspect Ratio:*  
+   *AI Image Generation Prompt:*  
+   *Adobe Stock Title:*  
+   *Adobe Stock Keywords:*  
+   *SEO Optimized File Name:*  
 
    **Parse Output should be like this**
 
