@@ -31,8 +31,7 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
    **Adobe Stock Keywords:** navratri, diya, nine diyas, hindu festival, indian festival, happy navratri, oil lamp, brass lamp, religious, devotional, indian culture, spirituality  
    **SEO Optimized File Name:** nine-diyas-happy-navratri-greeting  
 
-   **Use this Prompt to achieve the exact format as above **(Just put this into your current AI model where you generate the image prompt.)**
-**
+   Use this Prompt to achieve the exact format as above **(Just put this into your current AI model where you generate the image prompt.)**
 
    ```text
    From now EACH concept, you MUST output the data STRICTLY in the exact format below. Do not add any extra markdown formatting, bullet points, or numbers before the labels. The labels must be exact.
