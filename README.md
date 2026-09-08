@@ -84,7 +84,7 @@ For a simple local build:
 
 ```bash
 pip install pyinstaller
-pyinstaller --noconsole --onefile --name "Stock Ai Pro" --icon app_icon.ico app.py
+python -m PyInstaller --noconsole --windowed --name "StockAI Pro" --icon=app_icon.ico app.py
 ```
 
 If you do not have `app_icon.ico`, remove the `--icon app_icon.ico` part.
