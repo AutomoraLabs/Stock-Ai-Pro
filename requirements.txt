@@ -1,0 +1,18 @@
+# Stock Ai Pro - Required Python Packages
+# 
+# Installation:
+# 1. Open Command Prompt / Terminal in the Stock Ai Pro folder.
+# 2. Run:
+#
+#    pip install -r requirements.txt
+#
+# Or install manually:
+#
+#    pip install PyQt5 and QtAwesome
+#
+# After installation, run the application with:
+#
+#    python app.py
+
+PyQt5>=5.15,<6
+QtAwesome>=1.4,<2
