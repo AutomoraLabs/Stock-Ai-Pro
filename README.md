@@ -22,7 +22,7 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
    *Adobe Stock Keywords:*  
    *SEO Optimized File Name:*  
 
-   **Parse Output should be like this**
+   **Parse Output should be like this** (For an Example)
 
    **Category:** Culture and Religion  
    **Aspect Ratio:** 9:16  
