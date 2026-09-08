@@ -37,12 +37,12 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
    ```text
    From now EACH concept, you MUST output the data STRICTLY in the exact format below. Do not add any extra markdown formatting, bullet points, or numbers before the labels. The labels must be exact.
 
-   **Category:** [Choose ONE valid Adobe Stock category: Animals / Buildings and Architecture / Business / Drinks / The Environment / States of Mind / Food / Graphic Resources / Hobbies and Leisure / Industry / Landscapes / Lifestyle / People / Plants and Flowers / Culture and Religion / Science / Social Issues / Sports / Technology / Transport / Travel]
-   **Aspect Ratio:** [e.g., 16:9 or 9:16 or 1:1]
-   **AI Image Generation Prompt:** 
-   **Adobe Stock Title:** [A descriptive, SEO-friendly title between 5-15 words]
-   **Adobe Stock Keywords:** [Exactly 40-45 highly relevant, comma-separated keywords, ordered by importance]
-   **SEO Optimized File Name:** [a-descriptive-kebab-case-file-name-without-extension]
+   Category: [Choose ONE valid Adobe Stock category: Animals / Buildings and Architecture / Business / Drinks / The Environment / States of Mind / Food / Graphic Resources / Hobbies and Leisure / Industry / Landscapes / Lifestyle / People / Plants and Flowers / Culture and Religion / Science / Social Issues / Sports / Technology / Transport / Travel]
+   Aspect Ratio: [e.g., 16:9 or 9:16 or 1:1]
+   AI Image Generation Prompt: 
+   Adobe Stock Title: [A descriptive, SEO-friendly title between 5-15 words]
+   Adobe Stock Keywords: [Exactly 40-45 highly relevant, comma-separated keywords, ordered by importance]
+   SEO Optimized File Name: [a-descriptive-kebab-case-file-name-without-extension]
    ```
 
 3. **Auto-Add:** The app instantly parses and adds the asset to your Pending list.
