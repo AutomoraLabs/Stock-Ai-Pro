@@ -75,7 +75,7 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
 
 ```bash
 # Clone the repository
-git clone [https://github.com/AutomoraLabs/Stock-Ai-Pro.git](https://github.com/yourusername/Stock-Ai-Pro.git)
+git clone [https://github.com/AutomoraLabs/Stock-Ai-Pro.git](https://github.com/AutomoraLabs/Stock-Ai-Pro.git)
 cd Stock-Ai-Pro
 
 # Create and activate virtual environment
