@@ -1,122 +1,59 @@
-# Stock Ai Pro
+# 🚀 StockAI Pro
 
-Free and source-available Python software for managing AI-generated Adobe Stock assets.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![PyQt5](https://img.shields.io/badge/PyQt5-GUI-green?style=for-the-badge&logo=qt)
+![License](https://img.shields.io/badge/License-Free-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
 
-## What it does
+Free, lightning-fast, and open-source Python software designed to automate the workflow of managing, organizing, and exporting AI-generated assets for Adobe Stock contributors.
 
-Stock Ai Pro is designed around a simple workflow:
+## 💡 Why StockAI Pro?
 
-**Paste asset format → add to list → copy AI image prompt → generate/download image → automatic image pickup → SEO filename → organize assets → export CSV & images for Adobe Stock**
+Generating AI assets for microstock agencies often involves a tedious loop of copying prompts, downloading images, renaming files, and creating CSV metadata. **StockAI Pro** eliminates the friction by combining clipboard monitoring, one-click auto-picking, and automated metadata generation into a single, seamless desktop application.
 
-### Features
+### 🔄 The Core Workflow
 
-- Prompt format auto-add to the pending asset list
-- One-click AI prompt copying
-- Automatic latest-download image detection
-- Manual image browsing and drag & drop
-- Automatic SEO-friendly filename assignment
-- Asset folders and thumbnails
-- Saved prompts and custom prompt manager
-- Multiple UI languages
-- CSV & image export workflow for Adobe Stock
-- Free to use for personal and commercial work
+1. **Paste Metadata:** Paste your raw text format (Category, Prompt, Title, Keywords).
+2. **Auto-Add:** The app instantly parses and adds the asset to your Pending list.
+3. **1-Click Generation 🤖:** Click the Robot icon to copy the prompt to your clipboard and launch an auto-listener.
+4. **Auto-Pick:** Once you download the AI image, the app instantly detects, renames, and assigns it to the asset.
+5. **Bulk Export:** Click Export to generate an Adobe-ready CSV (with auto-mapped Category IDs) and a packed image folder.
 
-## Requirements
+---
 
-- Windows
-- Python 3.x
-- PyQt5
-- QtAwesome
+## ✨ Key Features
 
-## Run from source
+*   **🤖 1-Click Auto-Pick Workflow:** Copies your AI prompt and actively listens to your `Downloads` folder. The moment the image is generated and downloaded, it automatically grabs it, preventing manual browsing.
+*   **🧠 Smart Category Mapping:** Automatically reads text categories (e.g., "Culture and Religion", "Animals") and converts them into Adobe Stock's required numeric Category IDs (1-21) during CSV export.
+*   **⚡ Ultra-Fast Thumbnail Engine:** Automatically generates and caches 15KB tiny thumbnails for heavy 8K/4K images to ensure the UI remains instantaneous with zero lag.
+*   **📂 Automated Asset Organization:** Generates SEO-optimized filenames automatically and stores assets in dedicated folders with associated `.txt` metadata files.
+*   **📝 My Custom Prompts:** A built-in advanced Notepad to save, edit, pin (📌), and manage your favorite prompt templates. Includes a 1-click bulk export to `.txt` files.
+*   **🌍 Multi-Language UI:** Fully localized into 8 languages (English, Hindi, Spanish, Portuguese, Russian, Japanese, German, French) with persistent saving.
+*   **🛡️ Duplicate Prevention:** Remembers previously picked downloaded files across sessions to prevent accidental duplicate uploads.
+
+---
+
+## 🛠️ Requirements
+
+- **OS:** Windows 10/11
+- **Language:** Python 3.x
+- **Libraries:** `PyQt5`, `qtawesome`
+
+---
+
+## 🚀 Run from Source
 
 ```bash
+# Clone the repository
+git clone [https://github.com/yourusername/Stock-Ai-Pro.git](https://github.com/yourusername/Stock-Ai-Pro.git)
+cd Stock-Ai-Pro
+
+# Create and activate virtual environment
 python -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements.txt
+
+# Install dependencies
+pip install PyQt5 qtawesome
+
+# Run the app
 python app.py
-```
-
-## Project files
-
-```text
-Stock-Ai-Pro/
-├── app.py
-├── requirements.txt
-├── README.md
-├── LICENSE
-└── .gitignore
-```
-
-## Screenshots
-
-### Main Interface
-![Stock Ai Pro - Main Window](screenshots/Main-Window.png)
-
-### Asset with Generated Image
-![Stock Ai Pro - Asset with Image](screenshots/List-Window-with-Asset.png)
-
-### Pending Asset
-![Stock Ai Pro - Pending Asset](screenshots/List-Window-Blank.png)
-
-### AI Prompt Workflow
-![Stock Ai Pro - Robot Button](screenshots/Robot-Button.png)
-
-### Custom Prompts
-![Stock Ai Pro - Custom Prompts](screenshots/Save-Custom-Prompts.png)
-
-### CSV Bulk Export
-![Stock Ai Pro - CSV Bulk Export](screenshots/Export-CSV-Bulk-Upload.png)
-
-## Application data
-
-The application stores its workspace and saved data in the user's Documents folder under:
-
-```text
-StockAI_Pro_Workspace/
-```
-
-This includes saved prompts, picked-image history, thumbnails, and exported/local asset data.
-
-## Build a Windows executable
-
-For a simple local build:
-
-```bash
-pip install pyinstaller
-python -m PyInstaller --noconsole --windowed --name "StockAI Pro" --icon=app_icon.ico app.py
-```
-
-If you do not have `app_icon.ico`, remove the `--icon app_icon.ico` part.
-
-The generated executable will be placed in:
-
-```text
-dist/
-```
-
-You can then package the generated `.exe` with Inno Setup.
-
-## Important
-
-Stock Ai Pro is **not affiliated with Adobe Inc. or Adobe Stock**. Adobe Stock is a trademark of Adobe Inc.
-
-## Support
-
-Stock Ai Pro is free to use.
-
-If you find it useful and would like to support continued development:
-
-☕ https://www.buymeacoffee.com/rishichaurasiya
-
-## License
-
-Stock Ai Pro is free to use, modify, fork, contribute to, and use commercially.
-
-The software itself may not be sold, resold, or redistributed as a paid product without prior written permission from the copyright holder.
-
-See [LICENSE](LICENSE) for the full terms.
-
-## Author
-
-**Rishi Chaurasiya**
