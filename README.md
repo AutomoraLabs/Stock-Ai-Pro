@@ -15,22 +15,25 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
 
 1. **Paste Metadata:** Paste your raw text format. The app requires this exact structure to auto-parse correctly:
    
+   ```text
    Category:
    Aspect Ratio:
    AI Image Generation Prompt:
    Adobe Stock Title:
    Adobe Stock Keywords:
    SEO Optimized File Name:
+   ```
    
    **Parse Output should be like this**
    
+   ```text
    Category: Culture and Religion
    Aspect Ratio: 9:16
    AI Image Generation Prompt: Create a premium symbolic Navratri festival illustration featuring exactly nine beautifully crafted traditional brass diyas arranged in an elegant symmetrical arc, representing the nine nights of Navratri.
    Adobe Stock Title: Nine Diyas Happy Navratri Festival Greeting Illustration
    Adobe Stock Keywords: navratri, diya, nine diyas, hindu festival, indian festival, happy navratri, oil lamp, brass lamp, religious, devotional, indian culture, spirituality
    SEO Optimized File Name: nine-diyas-happy-navratri-greeting
-   
+   ```
 
    **Use this Prompt to achieve the exact format as above (Just put this into your current Model)**
 
@@ -46,10 +49,10 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
    ```
 
 
-2. **Auto-Add:** The app instantly parses and adds the asset to your Pending list.
-3. **1-Click Generation 🤖:** Click the Robot icon to copy the prompt to your clipboard and launch an auto-listener.
-4. **Auto-Pick:** Once you download the AI image, the app instantly detects, renames, and assigns it to the asset.
-5. **Bulk Export:** Click Export to generate an Adobe-ready CSV (with auto-mapped Category IDs) and a packed image folder.
+3. **Auto-Add:** The app instantly parses and adds the asset to your Pending list.
+4. **1-Click Generation 🤖:** Click the Robot icon to copy the prompt to your clipboard and launch an auto-listener.
+5. **Auto-Pick:** Once you download the AI image, the app instantly detects, renames, and assigns it to the asset.
+6. **Bulk Export:** Click Export to generate an Adobe-ready CSV (with auto-mapped Category IDs) and a packed image folder.
 
 ---
 
