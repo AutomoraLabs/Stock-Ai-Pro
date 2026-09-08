@@ -14,8 +14,8 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
 ### 🔄 The Core Workflow
 
 1. **Paste Metadata:** Paste your raw text format. The app requires this exact structure to auto-parse correctly:
-   
 
+   ```text
    Category: Backgrounds
    Aspect Ratio: 9:16
    AI Image Generation Prompt: [Your Prompt]
@@ -25,16 +25,15 @@ Generating AI assets for microstock agencies often involves a tedious loop of co
 
    **Use this Prompt to achieve the exact format as above (Just put this into your current Model)**
    
-      ```text
 From now EACH concept, you MUST output the data STRICTLY in the exact format below. Do not add any extra markdown formatting, bullet points, or numbers before the labels. The labels must be exact.
 
 Category: [Choose ONE valid Adobe Stock category: Animals / Buildings and Architecture / Business / Drinks / The Environment / States of Mind / Food / Graphic Resources / Hobbies and Leisure / Industry / Landscapes / Lifestyle / People / Plants and Flowers / Culture and Religion / Science / Social Issues / Sports / Technology / Transport / Travel]
 Aspect Ratio: [e.g., 16:9 or 9:16 or 1:1]
-AI Image Generation Prompt:
+AI Image Generation Prompt: 
 Adobe Stock Title: [A descriptive, SEO-friendly title between 5-15 words]
 Adobe Stock Keywords: [Exactly 40-45 highly relevant, comma-separated keywords, ordered by importance]
 SEO Optimized File Name: [a-descriptive-kebab-case-file-name-without-extension]
-     ```
+
    
 2. **Auto-Add:** The app instantly parses and adds the asset to your Pending list.
 3. **1-Click Generation 🤖:** Click the Robot icon to copy the prompt to your clipboard and launch an auto-listener.
