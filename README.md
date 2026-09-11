@@ -5,7 +5,8 @@
 ![License](https://img.shields.io/badge/License-Free-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
 
-Free, lightning-fast, and open-source Python software designed to automate the workflow of managing, organizing, and exporting AI-generated assets for Adobe Stock contributors.
+Stock AI Pro is a Free, lightning-fast, and open-source Python software designed to automate the workflow of managing, organizing, and exporting AI-generated assets for Adobe Stock contributors.
+
 
 ## 💡 Why StockAI Pro?
 
