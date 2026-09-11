@@ -136,7 +136,7 @@ Stock Ai Pro is **not affiliated with Adobe Inc. or Adobe Stock**. Adobe Stock i
 ## 🌐 Official Website
 
 **Stock AI Pro**  
-https://your-domain.com
+https://www.automoralabs.store
 
 ## Support
 
