@@ -1,4 +1,4 @@
-# 🚀 StockAI Pro
+# 🚀 Stock-Ai-Pro
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
 ![PyQt5](https://img.shields.io/badge/PyQt5-GUI-green?style=for-the-badge&logo=qt)
