@@ -133,10 +133,11 @@ You can then package the generated `.exe` with Inno Setup.
 
 Stock Ai Pro is **not affiliated with Adobe Inc. or Adobe Stock**. Adobe Stock is a trademark of Adobe Inc.
 
+
 ## 🌐 Official Website
 
 **Stock AI Pro**  
-https://www.automoralabs.store
+https://www.automoralabs.store/2026/09/Stock-Ai-Pro.html
 
 ## Support
 
