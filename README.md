@@ -1,180 +1,182 @@
-# 🚀 Stock-Ai-Pro
+# Stock AI Pro
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![PyQt5](https://img.shields.io/badge/PyQt5-GUI-green?style=for-the-badge&logo=qt)
-![License](https://img.shields.io/badge/License-Free-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
+**Organize images and metadata. Export the CSV you need.**
 
-Stock AI Pro is a Free, lightning-fast, and open-source Python software designed to automate the workflow of managing, organizing, and exporting AI-generated assets for Adobe Stock contributors.
+![Windows](https://img.shields.io/badge/Windows-Desktop-0078D6?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyQt5](https://img.shields.io/badge/PyQt5-GUI-41CD52?style=flat-square&logo=qt&logoColor=white)
+![Version](https://img.shields.io/badge/Version-2.0-8B5CF6?style=flat-square)
 
+Stock AI Pro is a free Windows desktop app for stock contributors, AI-image creators and anyone managing images with titles, keywords and other metadata. Turn formatted text into asset records, attach the matching images, and export your selected CSV fields.
 
-## 💡 Why StockAI Pro?
+Start with the built-in **Adobe Stock preset**, or create a custom parsing template with only the sections you need.
 
-Generating AI assets for microstock agencies often involves a tedious loop of copying prompts, downloading images, renaming files, and creating CSV metadata. **StockAI Pro** eliminates the friction by combining clipboard monitoring, one-click auto-picking, and automated metadata generation into a single, seamless desktop application.
+[Download for Windows](https://github.com/AutomoraLabs/Stock-Ai-Pro/releases/latest) · [Official website](https://www.automoralabs.store/2026/09/Stock-Ai-Pro.html) · [Report a bug](https://www.automoralabs.store/p/contact-us.html) · [Buy Me a Coffee](https://buymeacoffee.com/rishichaurasiya)
 
-### 🔄 The Core Workflow
+![Stock AI Pro showing Pending Assets and Attached Assets](https://res.cloudinary.com/xboahlnh/image/upload/v1791174106/dashboard-light.webp)
 
-1. **Paste Metadata:** Paste your raw text format. The app requires this exact structure to auto-parse correctly:
+## How it works
 
-   *Category:* 
-   *Aspect Ratio:*  
-   *AI Image Generation Prompt:*  
-   *Adobe Stock Title:*  
-   *Adobe Stock Keywords:*  
-   *SEO Optimized File Name:*  
+1. **Choose your format.** Open Parsing Templates, select the Adobe Stock preset or create your own, then set it as default.
+2. **Paste your asset details.** Matching text is parsed into records in Pending Assets. An optional Click-to-Paste toggle lets you paste from the clipboard by clicking the input area.
+3. **Copy the field you need.** Click an asset’s Robot button to copy the selected template field and queue Downloads Auto-Pick. Click again to cancel that request.
+4. **Generate and download, or attach manually.** Use your preferred image tool separately. Once an image is attached, its record moves to Attached Assets.
+5. **Export the attached assets.** Use the Adobe preset’s CSV/image package, or export the fields selected in your custom template.
+6. **Keep completed work in batches.** Mark All Upload moves attached records into Uploaded History as a separate batch.
 
-   **Parse Output should be like this** (For an Example)
+**Stock AI Pro does not generate images or upload them to contributor websites.** Robot copies text and starts Auto-Pick; Mark All Upload records completed work locally. You generate images and submit them to your destination separately.
 
-   **Category:** Culture and Religion  
-   **Aspect Ratio:** 9:16  
-   **AI Image Generation Prompt:** Create a premium symbolic Navratri festival illustration featuring exactly nine beautifully crafted traditional brass diyas arranged in an elegant symmetrical arc, representing the nine nights of Navratri.  
-   **Adobe Stock Title:** Nine Diyas Happy Navratri Festival Greeting Illustration  
-   **Adobe Stock Keywords:** navratri, diya, nine diyas, hindu festival, indian festival, happy navratri, oil lamp, brass lamp, religious, devotional, indian culture, spirituality  
-   **SEO Optimized File Name:** nine-diyas-happy-navratri-greeting  
+## Custom parsing templates
 
-   Use this Prompt to achieve the exact format as above **(Just put this into your current AI model where you generate the image prompt.)**
+You no longer have to use one fixed Adobe-only text format.
 
-   ```text
-   From now EACH concept, you MUST output the data STRICTLY in the exact format below. Do not add any extra markdown formatting, bullet points, or numbers before the labels. The labels must be exact.
+- Create, save and delete custom templates; the Adobe Stock default preset is protected from deletion.
+- Add or remove sections using placeholders such as `{title}`, `{tags}`, `{description}` or `{license}`.
+- Choose which section the Robot button copies. A Prompt section is optional.
+- Test sample input and inspect the parsed preview before adding assets.
+- Choose the fields included in CSV export; additional sections are not automatically exported.
+- Set a default template that persists after restart.
+- Get a warning before closing the template editor with unsaved changes.
 
-   Category: [Choose ONE valid Adobe Stock category: Animals / Buildings and Architecture / Business / Drinks / The Environment / States of Mind / Food / Graphic Resources / Hobbies and Leisure / Industry / Landscapes / Lifestyle / People / Plants and Flowers / Culture and Religion / Science / Social Issues / Sports / Technology / Transport / Travel]
-   Aspect Ratio: [e.g., 16:9 or 9:16 or 1:1]
-   AI Image Generation Prompt: 
-   Adobe Stock Title: [A descriptive, SEO-friendly title between 5-15 words]
-   Adobe Stock Keywords: [Exactly 40-45 highly relevant, comma-separated keywords, ordered by importance]
-   SEO Optimized File Name: [a-descriptive-kebab-case-file-name-without-extension]
-   ```
+![Parsing Templates with custom sections and CSV field selection](https://res.cloudinary.com/xboahlnh/image/upload/v1791174106/parsing-templates.webp)
 
-3. **Auto-Add:** The app instantly parses and adds the asset to your Pending list.
-4. **1-Click Generation 🤖:** Click the Robot icon to copy the prompt to your clipboard and launch an auto-listener.
-5. **Auto-Pick:** Once you download the AI image, the app instantly detects, renames, and assigns it to the asset.
-6. **Bulk Export:** Click Export to generate an Adobe-ready CSV (with auto-mapped Category IDs) and a packed image folder.
-
----
-
-## ✨ Key Features
-
-*   **🤖 1-Click Auto-Pick Workflow:** Copies your AI prompt and actively listens to your `Downloads` folder. The moment the image is generated and downloaded, it automatically grabs it, preventing manual browsing.
-*   **🧠 Smart Category Mapping:** Automatically reads text categories (e.g., "Culture and Religion", "Animals") and converts them into Adobe Stock's required numeric Category IDs (1-21) during CSV export.
-*   **⚡ Ultra-Fast Thumbnail Engine:** Automatically generates and caches 15KB tiny thumbnails for heavy 8K/4K images to ensure the UI remains instantaneous with zero lag.
-*   **📂 Automated Asset Organization:** Generates SEO-optimized filenames automatically and stores assets in dedicated folders with associated `.txt` metadata files.
-*   **📝 My Custom Prompts:** A built-in advanced Notepad to save, edit, pin (📌), and manage your favorite prompt templates. Includes a 1-click bulk export to `.txt` files.
-*   **🌍 Multi-Language UI:** Fully localized into 8 languages (English, Hindi, Spanish, Portuguese, Russian, Japanese, German, French) with persistent saving.
-*   **🛡️ Duplicate Prevention:** Remembers previously picked downloaded files across sessions to prevent accidental duplicate uploads.
-
----
-
-## 🛠️ Requirements
-
-- **OS:** Windows 10/11
-- **Language:** Python 3.x
-- **Libraries:** `PyQt5`, `qtawesome`
-
----
-
-## 🚀 Run from Source
-
-```bash
-# Clone the repository
-git clone [https://github.com/AutomoraLabs/Stock-Ai-Pro.git](https://github.com/AutomoraLabs/Stock-Ai-Pro.git)
-cd Stock-Ai-Pro
-
-# Create and activate virtual environment
-python -m venv .venv
-.venv\Scripts\activate
-
-# Install dependencies
-pip install PyQt5 qtawesome
-
-# Run the app
-python app.py
-
-
-## Build a Windows executable
-
-
-
-For a simple local build:
-
-
-
-```bash
-
-pip install pyinstaller
-
-python -m PyInstaller --noconsole --windowed --name "StockAI Pro" --icon=app_icon.ico app.py
-
-```
-
-
-
-If you do not have `app_icon.ico`, remove the `--icon app_icon.ico` part.
-
-
-
-The generated executable will be placed in:
-
-
+### Custom template example
 
 ```text
-
-dist/
-
+Title: {title}
+Tags: {tags}
+Description: {description}
+License: {license}
 ```
 
+Matching input:
 
+```text
+Title: Soft Botanical Shapes
+Tags: botanical, green, minimal
+Description: A minimal composition of botanical shapes on a light background
+License: Personal project
+```
 
-You can then package the generated `.exe` with Inno Setup.
+Select **Tags** as the Robot copy field if that is what you want copied. Select only the CSV fields you need—for example, Title and Tags.
 
+### Adobe Stock preset example
 
+```text
+Category: Graphic Resources
+Aspect Ratio: 3:2
+AI Image Generation Prompt: A minimal botanical composition with soft natural light
+Adobe Stock Title: Minimal Botanical Composition with Soft Natural Light
+Adobe Stock Keywords: botanical, minimal, natural light, green, composition
+SEO Optimized File Name: minimal-botanical-composition
+```
 
-## Important
+This is a parsing example. Review the image, metadata and destination requirements before submission.
 
+## Features
 
+| Feature | What it does |
+| --- | --- |
+| Pending and Attached lists | Keeps records without images separate from records ready for export. |
+| Downloads Auto-Pick | Matches a queued record with a newly downloaded image; manual attachment is also available. |
+| Sequential Auto Play | Starts Robot actions in pending-list order and advances after each image attaches. You still generate and download each image yourself. |
+| Image previews | Shows attached thumbnails and lets you open the image from its row. |
+| Sort controls | Sort by number, title or attachment priority; lock a sort choice to retain it after restart. |
+| My Prompts | Save, edit, pin, delete and export reusable prompts. |
+| Uploaded History | Keeps completed records in separate batches and includes Export Selected Batch. |
+| Folder exports | Exports images and TXT metadata into organized subfolders. |
+| Whole Settings backup | Exports/imports My Prompts, parsing templates and user settings. Asset lists and media are excluded. |
+| Appearance | Light/dark modes, soft accent choices, hover feedback and layouts that adapt to window size. |
+| Languages | English, Hindi, Spanish, Portuguese, Russian, Japanese, German and French. |
+| Permanent history deletion | Removes uploaded assets permanently when you choose the delete action and confirm. |
 
-Stock Ai Pro is **not affiliated with Adobe Inc. or Adobe Stock**. Adobe Stock is a trademark of Adobe Inc.
+<details>
+<summary>View the dark interface</summary>
 
+![Stock AI Pro dark interface](https://res.cloudinary.com/xboahlnh/image/upload/v1791174110/dashboard-dark.webp)
 
-## 🌐 Official Website
+</details>
 
-**Stock AI Pro**  
-https://www.automoralabs.store/2026/09/Stock-Ai-Pro.html
+<details>
+<summary>View Uploaded History</summary>
 
-## Support
+![Uploaded History with separate batches](https://res.cloudinary.com/xboahlnh/image/upload/v1791174109/batch-history.webp)
 
+</details>
 
+## CSV and file exports
 
-Stock Ai Pro is free to use.
+**Adobe Stock preset:** exports `AdobeStock_Metadata.csv` and an `Images_To_Upload` folder. The CSV contains `Filename`, `Title`, `Keywords`, `Category` and `Releases`. Recognized category names are mapped to Adobe Stock category IDs.
 
+**Custom templates:** export `Custom_Metadata.csv` containing the selected fields. Custom CSV export does not automatically create an Adobe-style image package; use folder export separately when needed.
 
+Exports use attached records that have not yet been marked as uploaded. Export before moving your records into Uploaded History.
 
-If you find it useful and would like to support continued development:
+Custom templates are flexible formats, not built-in integrations with every contributor platform. Match your destination’s exact column names, required values, filename rules and CSV formatting before uploading. Images are uploaded separately from CSV metadata.
 
+## Local workspace
 
+The app stores its workspace in your Windows Documents folder:
 
-☕ https://www.buymeacoffee.com/rishichaurasiya
+```text
+Documents\StockAI_Pro_Workspace\
+```
 
+Supported image formats: **JPG, JPEG, PNG and WEBP**.
 
+Whole Settings backup is for configuration and prompt/template libraries. It is not a backup of your assets or images; export those separately.
+
+## Run from source
+
+Use a Python environment compatible with PyQt5. The packaged Windows release does not require a separate Python installation.
+
+Open **Command Prompt**:
+
+```bat
+git clone https://github.com/AutomoraLabs/Stock-Ai-Pro.git
+cd Stock-Ai-Pro
+python -m venv .venv
+call .venv\Scripts\activate.bat
+python -m pip install --upgrade pip
+python -m pip install PyQt5 qtawesome
+python app.py
+```
+
+Keep `app_icon.ico` beside `app.py` for the application icon.
+
+## Build a Windows OneDir release
+
+From the activated environment and project folder:
+
+```bat
+python -m pip install --upgrade pyinstaller pyinstaller-hooks-contrib
+python -m PyInstaller --noconfirm --clean --onedir --windowed --noupx --name "App" --icon "app_icon.ico" --add-data "app_icon.ico:." --collect-data qtawesome "app.py"
+```
+
+Test the executable:
+
+```bat
+start "" "dist\App\App.exe"
+```
+
+Distribute the complete `dist\App` folder, including `_internal`. Copying only `App.exe` is not sufficient.
+
+For an installer, use Inno Setup to copy the **contents of `dist\App`** into the installation directory, and include `app_icon.ico` for shortcuts and the uninstall entry. OneDir avoids extracting bundled dependencies on each launch; startup time still depends on the app and computer.
+
+Build references: [PyInstaller options](https://pyinstaller.org/en/stable/usage.html) · [Inno Setup files](https://jrsoftware.org/ishelp/topic_filessection.htm)
+
+## Support and contributions
+
+Found a problem? [Open a GitHub issue](https://github.com/AutomoraLabs/Stock-Ai-Pro/issues) or [contact Automora Labs](https://www.automoralabs.store/p/contact-us.html). Include your app version, Windows version, steps to reproduce and a screenshot where helpful.
+
+If the app helps your workflow, you can [support development on Buy Me a Coffee](https://buymeacoffee.com/rishichaurasiya).
 
 ## License
 
+Stock AI Pro is free to use, modify, fork, contribute to and use commercially. The software itself may not be sold, resold or redistributed as a paid product without prior written permission from the copyright holder.
 
+See [LICENSE](LICENSE) for the full terms. Bundled third-party libraries and fonts retain their own licenses.
 
-Stock Ai Pro is free to use, modify, fork, contribute to, and use commercially.
+Stock AI Pro is not affiliated with Adobe Inc., Adobe Stock or other contributor platforms. Platform names and trademarks belong to their respective owners.
 
-
-
-The software itself may not be sold, resold, or redistributed as a paid product without prior written permission from the copyright holder.
-
-
-
-See [LICENSE](LICENSE) for the full terms.
-
-
-
-## Author
-
-
-
-**Rishi Chaurasiya** 
-
+**Created by Rishi Chaurasiya · [Automora Labs](https://www.automoralabs.store)**
